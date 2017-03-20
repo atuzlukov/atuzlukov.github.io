@@ -26,7 +26,7 @@ https://api.telegram.org/bot{{Укажите тут токен бота}}/sendMe
 ```php
 https://api.telegram.org/bot110201543:AAHdqTcvCH1vGWJxfSeofSAs0K5PALDsaw/sendMessage?chat_id=@channelname&text=hello!
 ```
-Если скопировать эту ссылку в браузер, то в ответ получим ответ 
+Если скопировать эту ссылку в браузер, то в результате получим: 
 ```php
 {
     "ok":true,

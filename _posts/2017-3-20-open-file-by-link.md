@@ -17,7 +17,7 @@ title: Открытие файла в PHPStorm по ссылке.
 
 В редакторе phpstorm Tools->Create Command-line Launcher
 
-![_phpstormsettings1]({{ site.baseurl }}/images/linkphpstorm/phpstormsettings.jpg)
+![_phpstormsettings1]({{ site.baseurl }}/images/linkphpstorm/phpstormsettings.png)
 ![_phpstormsettings2]({{ site.baseurl }}/images/linkphpstorm/phpstormsettings2.jpg)
 ![_phpstormsettings3]({{ site.baseurl }}/images/linkphpstorm/phpstormsettings3.jpg)
 

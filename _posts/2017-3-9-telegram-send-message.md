@@ -14,18 +14,36 @@ title: Telegram send message.
  
 https://core.telegram.org/bots#6-botfather
 
-После того как бот будет создан и ему будет задано имя botfather вернет токен вида 110201543:AAHdqTcvCH1vGWJxfSeofSAs0K5PALDsaw
+После того как бот будет создан и ему будет задано имя botfather вернет токен вида 
+
+**110201543:AAHdqTcvCH1vGWJxfSeofSAs0K5PALDsaw**
 
 Далее необходимо сделать администратором канала, который был создан ранее этого бота, для этого нужно перейти в настройки канала и в разделе администраторов указать имя бота @botname
 
 Теперь вы можете отправлять в канал сообщения, чтобы проверить перейдите по ссылке (не забудте подставить в нее токен и название канала)
+```php
 https://api.telegram.org/bot{{Укажите тут токен бота}}/sendMessage?chat_id={{Укажите название канала}}&text=hello!
+```
 Рабочая ссылка будет выглядеть примерно так
+```php
 https://api.telegram.org/bot110201543:AAHdqTcvCH1vGWJxfSeofSAs0K5PALDsaw/sendMessage?chat_id=@channelname&text=hello!
-
+```
 Если скопировать эту ссылку в браузер, то в ответ получим ответ 
-{"ok":true,"result":{"message_id":12,"chat":{"id":-1001074775555,"title":"channelname","type":"channel"},"date":1488892694,"text":"hello!"}}
-
+```php
+{
+    "ok":true,
+    "result":{
+        "message_id":12,
+        "chat":{
+            "id":-1001074775555,
+            "title":"channelname",
+            "type":"channel"
+        },
+        "date":1488892694,
+        "text":"hello!"
+    }
+}
+```
 Параметр id это уникальный идентификатор канала, запомните его
 
 Чтобы сделать канал приватным нужно в его настройках удалить ссылку, а при отправке сообщения в параметр chat_id передать значение уникального идентификатора канала 

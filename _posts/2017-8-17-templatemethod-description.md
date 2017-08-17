@@ -106,6 +106,9 @@ class Tea extends AbstractBeverage
 }
 ```
 
+[Github](https://github.com/atuzlukov/patterns/tree/dev/src/TemplateMethod/Coffee)
+
+
 ## Принципы
 
 **Голливудский принцип** - не вызывайте нас - мы сами вас вызовем
